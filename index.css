@@ -28,6 +28,18 @@
   }
 }
 
+
+.scroll-top-faq{
+  background-color: #183457ce;
+  color: white;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  text-decoration: none;
+  padding: 11px 11px 5px 11px;
+  border-radius: 50%;
+}
+
 .search-container_FAQ {
   margin: 20px 0px;
   text-align: center;
@@ -298,3 +310,4 @@ form textarea {
     margin: 5px 5px;
   }
 }
+
