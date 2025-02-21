@@ -206,3 +206,9 @@
       border-radius: 5px;
       color: white;
   }
+
+  @media screen and (max-width: 768px) {
+    .FAQ_Form form {
+        width: 85%;
+    }
+  }
