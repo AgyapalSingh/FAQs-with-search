@@ -209,7 +209,7 @@ form input {
 }
 
 .phn-code {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   margin-right: 10px;
   padding: 8px;
   background-color: #eee9e3;
@@ -250,6 +250,7 @@ form textarea {
   }
   .FAQ_Form form {
     width: 85%;
+    padding: 10% 5% 5% 5%;
   }
   .sections-links-btn-div {
     width: 100%;
