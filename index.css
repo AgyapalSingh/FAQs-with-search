@@ -1,0 +1,208 @@
+.search-container_FAQ {
+    margin: 20px 0px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  #search-input_FAQ {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  
+  .sections-links-btn{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 20px;
+  }
+  
+  .link-div{
+      width: 200px;
+      height: 30px;
+      margin: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #183457;
+      cursor: pointer;
+  }
+  
+  .link-div a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      font-size: 14px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .accordion_FAQ {
+    width: 70%;
+    margin: 0 15%;
+    padding-bottom: 100px;
+  }
+  
+  .section-title{
+      font-size: 18px;
+  }
+  
+  .accordion__header_FAQ {
+    padding: 1em;
+    margin-top: 2px;
+    display: flex;
+    background-color: #f5f2ee;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: "poppins";
+    border-radius: 7px 7px 0px 0px;
+  }
+  
+  .accordion__header_FAQ > * {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    font-size: 16px;
+  }
+  .accordion__header_FAQ.is-active {
+    background-color: #eee9e3 !important;
+  }
+  .accordion__header_FAQ h2 {
+    width: 90%;
+  }
+  .accordion__toggle_FAQ {
+    margin-left: 10px;
+    height: 3px;
+    background-color: #222;
+    width: 13px;
+    display: block;
+    position: relative;
+    flex-shrink: 1;
+    border-radius: 2px;
+  }
+  
+  .accordion__toggle_FAQ::before {
+    content: "";
+    width: 3px;
+    height: 13px;
+    display: block;
+    background-color: #17153b;
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    border-radius: 2px;
+  }
+  
+  .is-active .accordion__toggle_FAQ {
+    background-color: #000;
+  }
+  .is-active .accordion__toggle_FAQ::before {
+    display: none;
+  }
+  @media only screen and (max-width: 768px) {
+    .accordion_FAQ {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  
+  .accordion__body_FAQ {
+    display: none;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-radius: 0px 0px 7px 7px;
+    letter-spacing: 0.1px;
+  }
+  
+  .accordion__body_FAQ p {
+    font-size: 14px;
+    font-family: "poppins";
+  }
+  .accordion__body_FAQ.is-active {
+    display: block;
+  }
+  
+  .FAQ_Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .FAQ_Form h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  .FAQ_Form form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 2% 5%;
+    background-color: #f5f2ee;
+    border-radius: 15px;
+  }
+  
+  form label {
+    margin-bottom: 10px;
+  }
+  
+  form input {
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+  
+  .phn-input-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .phn-code {
+    margin-bottom: 32px;
+    margin-right: 10px;
+    padding: 8px;
+    background-color: #eee9e3;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+  
+  #telNo {
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    justify-self: center;
+  }
+  
+  form textarea{
+      outline: none;
+      border: none;
+      margin-bottom: 20px;
+      height: 150px;
+      padding-left: 10px;
+  }
+  
+  .faq-submit-btn{
+      outline: none;
+      border: none;
+      background-color: #183457;
+      height: 40px;
+      border-radius: 5px;
+      color: white;
+  }
