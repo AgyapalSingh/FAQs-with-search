@@ -168,38 +168,55 @@
   display: block;
 }
 
+.faq-form-header{
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.Uniq-FAQ_Form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
 .FAQ_Form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  width: 40%;
+  background-color: #183457;
+  padding: 50px 0px;
+  border-radius: 15px;
 }
 
 .FAQ_Form h1 {
-  font-size: 24px;
-  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 80px;
 }
 
 .FAQ_Form form {
   display: flex;
   flex-direction: column;
-  width: 40%;
-  padding: 2% 5%;
-  background-color: #f5f2ee;
-  border-radius: 15px;
+  width: 80%;
 }
 
 form label {
+  color: white;
   margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
 }
 
 form input {
-  margin-bottom: 15px;
+  height: 40px;
   border: none;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+  background-color: #183457;
   outline: none;
-  height: 30px;
-  padding-left: 10px;
-  border-radius: 5px;
+  color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .phn-input-div {
@@ -225,28 +242,47 @@ form input {
 }
 
 form textarea {
-  outline: none;
+  height: 40px;
   border: none;
-  margin-bottom: 20px;
-  height: 150px;
-  padding-left: 10px;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 10px;
+  background-color: #183457;
+  outline: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  height: 50px;
+  margin-top: 5px
 }
 
 .faq-submit-btn {
-  outline: none;
+  background-color: #ffffff;
+  color: #183457;
+  height: 50px;
   border: none;
-  background-color: #183457;
-  height: 40px;
   border-radius: 5px;
-  color: white;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  margin-top: 55px;
 }
 
 @media screen and (max-width: 768px) {
+  .FAQ_Form {
+    width: 90%;
+  }
+  
   .FAQ_Form h1 {
     width: 80%;
     margin-bottom: 20px;
     font-size: 18px;
     text-align: center;
+  }
+  .Uniq-FAQ_Form {
+    width: 100%;
+    margin-bottom: 60px;
   }
   .FAQ_Form form {
     width: 85%;
