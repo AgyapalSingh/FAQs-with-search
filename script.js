@@ -90,7 +90,7 @@ form.addEventListener("submit", function (event) {
   const formData = new FormData(this);
 
   fetch(
-    "https://script.google.com/macros/s/AKfycbxrdL9xrUIFHfvswfgxSVDH7B7lVZnd74rQFEhr5r89MOf439-w6c0fPJ4B4SC0G58xqg/exec",
+    "https://script.google.com/macros/s/AKfycbypItH9eErwNzg0Wa6yZfJj71E9ncVGyZs9ZQ9Xpoh8z7WboKb7BWO3puqrlHVhYGebjA/exec",
     {
       method: "POST",
       body: formData,
