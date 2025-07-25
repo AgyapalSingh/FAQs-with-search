@@ -185,6 +185,11 @@
   display: block;
 }
 
+.faq-form-header-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .faq-form-header {
   font-size: 18px;
   text-align: center;
@@ -299,6 +304,10 @@ form textarea {
 
 @media screen and (max-width: 768px) {
   #search-input_FAQ {
+    width: 90%;
+  }
+
+  .faq-form-header{
     width: 90%;
   }
   .FAQ_Form {
