@@ -74,18 +74,19 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+  gap: 20px ;
 }
 
 .link-div {
   width: 200px;
-  height: 50px;
-  margin: 10px 20px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #183457;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  overflow: hidden;
+  border: 1px solid #f5f2ee;
 }
 
 .link-div a {
@@ -94,6 +95,11 @@
   text-align: center;
   font-size: 14px;
   font-family: "Poppins";
+}
+
+.link-div a img:hover {
+  transform: scale(1.1);
+  transition: transform 1s ease-in-out;
 }
 
 .accordion_FAQ {
@@ -185,7 +191,7 @@
   display: block;
 }
 
-.faq-form-header-div{
+.faq-form-header-div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -307,7 +313,12 @@ form textarea {
     width: 90%;
   }
 
-  .faq-form-header{
+  .link-div {
+    width: 150px;
+    height: 150px;
+  }
+
+  .faq-form-header {
     width: 90%;
   }
   .FAQ_Form {
@@ -330,10 +341,5 @@ form textarea {
   }
   .sections-links-btn-div {
     width: 100%;
-  }
-  .link-div {
-    width: 150px;
-    height: 40px;
-    margin: 5px 5px;
   }
 }
