@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let hasActiveAccordion = false;
     headers.forEach((header) => {
       const question = header.textContent.toLowerCase();
-      const isVisible = question.includes(value);
+      const answer = header.nextElementSibling?.textContent.toLowerCase() || "";
+      const isVisible = question.includes(value) || answer.includes(value);
+
       if (isVisible) {
         header.style.display = "flex";
         if (header.classList.contains("is-active")) {

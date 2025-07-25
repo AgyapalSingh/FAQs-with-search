@@ -22,7 +22,7 @@
   font-weight: 200;
 }
 
-.Header  h1 a {
+.Header h1 a {
   text-decoration: none;
   color: white;
   border-bottom: 1px solid white;
@@ -34,8 +34,7 @@
   }
 }
 
-
-.scroll-top-faq{
+.scroll-top-faq {
   background-color: #183457ce;
   color: white;
   position: fixed;
@@ -47,14 +46,14 @@
 }
 
 .search-container_FAQ {
-  margin: 20px 0px;
+  margin-top: 30px;
   text-align: center;
   margin-bottom: 30px;
 }
 
 #search-input_FAQ {
   padding: 10px;
-  width: 60%;
+  width: 70%;
   border: 1px solid #ccc;
   border-radius: 10px;
   font-size: 16px;
@@ -186,14 +185,14 @@
   display: block;
 }
 
-.faq-form-header{
+.faq-form-header {
   font-size: 18px;
   text-align: center;
   margin-bottom: 30px;
   font-family: "Playfair Display", serif;
 }
 
-.faq-form-header a{
+.faq-form-header a {
   border: 1px solid #183457;
   padding: 5px 20px;
   border-radius: 5px;
@@ -201,7 +200,6 @@
   text-decoration: none;
   font-family: "Poppins";
   font-size: 14px;
-
 }
 
 .Uniq-FAQ_Form {
@@ -209,7 +207,6 @@
   flex-direction: row;
   justify-content: space-around;
 }
-
 
 .FAQ_Form {
   display: flex;
@@ -282,7 +279,7 @@ form textarea {
   color: white;
   font-family: "Poppins", sans-serif;
   height: 50px;
-  margin-top: 5px
+  margin-top: 5px;
 }
 
 .faq-submit-btn {
@@ -301,10 +298,13 @@ form textarea {
 }
 
 @media screen and (max-width: 768px) {
+  #search-input_FAQ {
+    width: 90%;
+  }
   .FAQ_Form {
     width: 90%;
   }
-  
+
   .FAQ_Form h1 {
     width: 80%;
     margin-bottom: 20px;
@@ -328,4 +328,3 @@ form textarea {
     margin: 5px 5px;
   }
 }
-
