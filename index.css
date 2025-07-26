@@ -61,20 +61,21 @@
 }
 
 .sections-links-btn {
-  width: 100%;
+  width: 70%;
+  margin: 0 15%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-direction: column;
   margin-bottom: 20px;
 }
 
 .sections-links-btn-div {
-  width: 70%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
-  gap: 20px ;
+  gap: 20px;
 }
 
 .link-div {
@@ -104,7 +105,6 @@
 .link-div a img:hover {
   transform: scale(1.1);
 }
-
 
 .accordion_FAQ {
   width: 70%;
@@ -315,6 +315,10 @@ form textarea {
 @media screen and (max-width: 768px) {
   #search-input_FAQ {
     width: 90%;
+  }
+  .sections-links-btn {
+    width: 90%;
+    margin: 0 5%;
   }
 
   .link-div {
