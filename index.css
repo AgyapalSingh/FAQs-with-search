@@ -97,10 +97,14 @@
   font-family: "Poppins";
 }
 
+.link-div a img {
+  transition: transform 0.7s ease-in-out;
+}
+
 .link-div a img:hover {
   transform: scale(1.1);
-  transition: transform 1s ease-in-out;
 }
+
 
 .accordion_FAQ {
   width: 70%;

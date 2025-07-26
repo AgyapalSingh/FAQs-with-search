@@ -3,32 +3,39 @@ document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".accordion__header_FAQ");
   const bodies = document.querySelectorAll(".accordion__body_FAQ");
 
-  searchInput.addEventListener("keyup", function () {
-    const value = searchInput.value.toLowerCase();
-    let hasActiveAccordion = false;
-    headers.forEach((header) => {
-      const question = header.textContent.toLowerCase();
-      const answer = header.nextElementSibling?.textContent.toLowerCase() || "";
-      const isVisible = question.includes(value) || answer.includes(value);
+  const faqData = Array.from(headers).map((header) => ({
+    header,
+    body: header.nextElementSibling,
+    question: header.textContent.trim(),
+    answer: header.nextElementSibling?.textContent.trim() || "",
+  }));
 
-      if (isVisible) {
+  const fuse = new Fuse(faqData, {
+    keys: ["question", "answer"],
+    threshold: 0.5, 
+  });
+
+  searchInput.addEventListener("keyup", function () {
+    const value = searchInput.value.trim();
+
+    if (!value) {
+      faqData.forEach(({ header, body }) => {
         header.style.display = "flex";
-        if (header.classList.contains("is-active")) {
-          header.nextElementSibling.style.display = "flex";
-          hasActiveAccordion = true;
-        } else {
-          header.nextElementSibling.style.display = "none";
-        }
-      } else {
-        header.style.display = "none";
-        header.nextElementSibling.style.display = "none";
-      }
-    });
-    if (!hasActiveAccordion) {
-      bodies.forEach((body) => {
         body.style.display = "none";
       });
+      return;
     }
+
+    const results = fuse.search(value);
+
+    faqData.forEach(({ header, body }) => {
+      header.style.display = "none";
+      body.style.display = "none";
+    });
+
+    results.forEach(({ item }) => {
+      item.header.style.display = "flex";
+    });
   });
 
   headers.forEach((header) => {
