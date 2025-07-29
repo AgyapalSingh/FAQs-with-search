@@ -122,7 +122,7 @@
 }
 
 .accordion__header_FAQ {
-  padding: 1em;
+  padding: 8px 20px;
   margin-top: 2px;
   display: flex;
   background-color: #f5f2ee;
