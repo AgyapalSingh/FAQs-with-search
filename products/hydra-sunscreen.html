@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tinted Products</title>
+    <link rel="stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <div class="Header">
+      <h1>
+        Developed By -
+        <a
+          href="https://www.linkedin.com/in/agyapal-singh-020983241/"
+          target="_blank"
+        >
+          Agyapal Singh
+        </a>
+      </h1>
+    </div>
+
+    <div id="search-faqs" class="search-container_FAQ">
+      <input
+        type="text"
+        id="search-input_FAQ"
+        placeholder="Search your question..."
+      />
+    </div>
+
+    <div id="tinted-sunscreen" class="accordion_FAQ">
+      <h1 class="section-title_FAQ">Related to Hydra Sunscreen</h1>
+      <div class="accordion__header_FAQ">
+        <h2>Are Uniqaya’s products tested on animals?</h2>
+        <span class="accordion__toggle_FAQ"></span>
+      </div>
+      <div class="accordion__body_FAQ">
+        <p>
+          Uniqaya’s products have a super strict cruelty free policy. No
+          products or source ingredients are tested on animals. Our
+          manufacturing and testing processes are completely free from animal
+          testing and we only source from suppliers who do not test on animals.
+          <br /><br />
+          Since I lead a busy life I need to keep my routine simple. What are
+          the absolute skincare basics?
+          <br /><br />
+          You can never go wrong with Uniqaya’s Facewash and moisturizer, which
+          is later followed by a sunscreen. These three ingredients can take you
+          a long way!
+        </p>
+      </div>
+      <div class="accordion__header_FAQ">
+        <h2>What are the most important parts of a skincare routine?</h2>
+        <span class="accordion__toggle_FAQ"></span>
+      </div>
+      <div class="accordion__body_FAQ">
+        <p>
+          Apart from following the cleanse, tone and moisture skincare routine,
+          you need to also keep your skin safe from the harmful rays of the sun.
+          The damage can result in dark spots, wrinkles, and also there is a
+          risk of skin cancer. Choose Uniqaya’s broad-spectrum sunscreen keep
+          you protected.
+        </p>
+      </div>
+      <div class="accordion__header_FAQ">
+        <h2>Why moisturizer is important?</h2>
+        <span class="accordion__toggle_FAQ"></span>
+      </div>
+      <div class="accordion__body_FAQ">
+        <p>
+          Using a good moisturizer can help in preventing and treating dry skin.
+          It can also protect sensitive skin and improve the texture of your
+          skin.
+        </p>
+      </div>
+      <div class="accordion__header_FAQ">
+        <h2>How can I get rid of blackheads?</h2>
+        <span class="accordion__toggle_FAQ"></span>
+      </div>
+      <div class="accordion__body_FAQ">
+        <p>
+          Blackheads form when a clog or plug develops in the opening of hair
+          follicles in your skin. Exfoliating works well to get rid of the
+          blackheads from your skin. Uniqaya’s foaming facewash is efficient in
+          keeping your skin clean and helps in getting rid of blackheads.
+        </p>
+      </div>
+      <div class="accordion__header_FAQ">
+        <h2>Should I moisturize my face at night or in the morning?</h2>
+        <span class="accordion__toggle_FAQ"></span>
+      </div>
+      <div class="accordion__body_FAQ">
+        <p>
+          It's important to replenish the water loss with a moisturizer
+          overnight because the skin’s oil production peaks at midday, and there
+          is less oil production at night.
+        </p>
+      </div>
+      <div class="accordion__header_FAQ">
+        <h2>Can I use moisturizer 3 times a day?</h2>
+        <span class="accordion__toggle_FAQ"></span>
+      </div>
+      <div class="accordion__body_FAQ">
+        <p>
+          Using a moisturizer twice a day is recommended. One must never overuse
+          it.
+        </p>
+      </div>
+      <div class="accordion__header_FAQ">
+        <h2>Should You Apply Sunscreen or Moisturizer First?</h2>
+        <span class="accordion__toggle_FAQ"></span>
+      </div>
+      <div class="accordion__body_FAQ">
+        <p>It’s important to apply a moisturizer before you apply sunscreen.</p>
+      </div>
+      <div class="accordion__header_FAQ">
+        <h2>Can sunscreen act as a moisturizer?</h2>
+        <span class="accordion__toggle_FAQ"></span>
+      </div>
+      <div class="accordion__body_FAQ">
+        <p>
+          If you’re considering purchasing sunscreen from Uniqaya, then there is
+          no need to moisturize your skin before applying the sunscreen.
+        </p>
+      </div>
+      <div class="accordion__header_FAQ">
+        <h2>Which is more important: sunscreen or moisturizer?</h2>
+        <span class="accordion__toggle_FAQ"></span>
+      </div>
+      <div class="accordion__body_FAQ">
+        <p>
+          Both of these products are an indispensable part of a skincare
+          routine. Hence, you must use both of them.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-form-header-div">
+      <h1 class="faq-form-header">
+        Didn't get your answer? then submit your query so we can solve it for
+        you
+        <!-- ! <a href="#Uniq-FAQ-Form">Submit Here ! </a> -->
+      </h1>
+    </div>
+
+    <div id="Uniq-FAQ-Form" class="Uniq-FAQ_Form">
+      <div class="FAQ_Form">
+        <h1>Query Form</h1>
+
+        <form id="faqForm">
+          <label for="name">Name :</label>
+          <input
+            type="text"
+            placeholder="Your name "
+            id="name"
+            name="name"
+            required
+          />
+
+          <label for="telNo">Phone number:</label>
+          <div class="phn-input-div">
+            <p class="phn-code">+91</p>
+            <input
+              id="telNo"
+              name="telNo"
+              type="tel"
+              maxlength="10"
+              required
+              placeholder="Enter 10-digit mobile number"
+            />
+          </div>
+          <small id="phoneError" style="color: red; display: none"
+            >Please enter a valid 10-digit Indian mobile number.</small
+          >
+
+          <label for="email">Email :</label>
+          <input
+            type="email"
+            placeholder="example123@example.com"
+            id="email"
+            name="email"
+            required
+          />
+
+          <label for="message">Your Query :</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <input type="hidden" id="date" name="date" />
+
+          <button type="submit" class="faq-submit-btn">Submit</button>
+        </form>
+
+        <div
+          id="formResponse"
+          style="
+            margin-top: 20px;
+            color: green;
+            font-family: Poppins, sans-serif;
+            height: 5vh;
+            text-align: center;
+          "
+        ></div>
+      </div>
+    </div>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+  </body>
+</html>
