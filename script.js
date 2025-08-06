@@ -65,17 +65,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const regex = /^(?:\+91)?[6-9]\d{9}$/;
     return regex.test(phone);
   }
-
+  let errorTimeout;
   phoneInput.addEventListener("input", function () {
     let phoneValue = phoneInput.value.trim();
+
     if (/^[6-9]\d{9}$/.test(phoneValue)) {
       phoneInput.value = phoneValue;
     }
 
     if (validateIndianPhone(phoneInput.value)) {
       phoneError.style.display = "none";
+      clearTimeout(errorTimeout);
     } else {
       phoneError.style.display = "block";
+
+      clearTimeout(errorTimeout);
+
+      errorTimeout = setTimeout(() => {
+        phoneError.style.display = "none";
+      }, 3000);
     }
   });
 });
@@ -121,7 +129,6 @@ form.addEventListener("submit", function (event) {
         "An error occurred while submitting. Please try again.";
     });
 });
-
 
 //  OPEN CONTACT FORM
 document.addEventListener("DOMContentLoaded", function () {
