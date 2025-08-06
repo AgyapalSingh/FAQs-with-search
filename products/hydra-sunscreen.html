@@ -134,71 +134,73 @@
       </div>
     </div>
 
+    <!-- Query Form -->
     <div class="faq-form-header-div">
       <h1 class="faq-form-header">
         Didn't get your answer? then submit your query so we can solve it for
         you
-        <!-- ! <a href="#Uniq-FAQ-Form">Submit Here ! </a> -->
       </h1>
+      <button id="openFAQModal" class="faq-open-btn">Submit Your Query</button>
     </div>
 
-    <div id="Uniq-FAQ-Form" class="Uniq-FAQ_Form">
-      <div class="FAQ_Form">
-        <h1>Query Form</h1>
+    <div id="faqModal" class="faq-modal">
+      <div class="faq-modal-content">
+        <span id="closeFAQModal" class="faq-close">&times;</span>
 
-        <form id="faqForm">
-          <label for="name">Name :</label>
-          <input
-            type="text"
-            placeholder="Your name "
-            id="name"
-            name="name"
-            required
-          />
+        <div class="FAQ_Form">
+          <h1>Query Form</h1>
 
-          <label for="telNo">Phone number:</label>
-          <div class="phn-input-div">
-            <p class="phn-code">+91</p>
+          <form id="faqForm">
+            <label for="name">Name :</label>
             <input
-              id="telNo"
-              name="telNo"
-              type="tel"
-              maxlength="10"
+              type="text"
+              placeholder="Your name"
+              id="name"
+              name="name"
               required
-              placeholder="Enter 10-digit mobile number"
             />
-          </div>
-          <small id="phoneError" style="color: red; display: none"
-            >Please enter a valid 10-digit Indian mobile number.</small
-          >
 
-          <label for="email">Email :</label>
-          <input
-            type="email"
-            placeholder="example123@example.com"
-            id="email"
-            name="email"
-            required
-          />
+            <label for="telNo">Phone number:</label>
+            <div class="phn-input-div">
+              <p class="phn-code">+91</p>
+              <input
+                id="telNo"
+                name="telNo"
+                type="tel"
+                maxlength="10"
+                required
+                placeholder="Enter 10-digit mobile number"
+              />
+            </div>
+            <small id="phoneError" style="color: red; display: none"
+              >Please enter a valid 10-digit Indian mobile number.</small
+            >
 
-          <label for="message">Your Query :</label>
-          <textarea id="message" name="message" required></textarea>
+            <label for="email">Email :</label>
+            <input
+              type="email"
+              placeholder="example123@example.com"
+              id="email"
+              name="email"
+              required
+            />
 
-          <input type="hidden" id="date" name="date" />
+            <label for="message">Your Query :</label>
+            <textarea id="message" name="message" required></textarea>
 
-          <button type="submit" class="faq-submit-btn">Submit</button>
-        </form>
+            <input type="hidden" id="date" name="date" />
+            <button type="submit" class="faq-submit-btn">Submit</button>
+          </form>
 
-        <div
-          id="formResponse"
-          style="
-            margin-top: 20px;
-            color: green;
-            font-family: Poppins, sans-serif;
-            height: 5vh;
-            text-align: center;
-          "
-        ></div>
+          <div
+            id="formResponse"
+            style="
+              color: green;
+              font-family: Poppins, sans-serif;
+              text-align: center;
+            "
+          ></div>
+        </div>
       </div>
     </div>
     <script src="../script.js"></script>
