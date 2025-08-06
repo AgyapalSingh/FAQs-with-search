@@ -185,16 +185,17 @@
   background-color: #ffffff;
 }
 
-.sections-links-btn  {
+.sections-links-btn {
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: black;
 }
 
-.sections-links-btn .external-link-icon{
+.sections-links-btn .external-link-icon {
   width: 10px;
   height: 10px;
+  background-color: #00000000;
 }
 
 /* FAQ Form Header ***********************************************************************************************************************************************************************************************************************************/
@@ -351,8 +352,8 @@ form textarea {
   }
 
   .sections-links-btn-div {
-  gap: 5px;
-}
+    gap: 5px;
+  }
 
   .faq-form-header {
     width: 90%;
