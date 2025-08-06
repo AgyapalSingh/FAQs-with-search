@@ -59,55 +59,12 @@
   font-size: 16px;
   font-family: "Poppins";
 }
-
-.sections-links-btn {
-  width: 70%;
-  margin: 0 15%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 20px;
+#search-input_FAQ:focus {
+  outline: none;
+  border-color: #183457;
 }
 
-.sections-links-btn-div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 20px;
-  gap: 20px;
-  background-color: #f5f2ee;
-  padding: 20px 0px;
-  border-radius: 10px;
-}
-
-.link-div {
-  width: 200px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  cursor: pointer;
-  overflow: hidden;
-  border: 1px solid #f5f2ee;
-}
-
-.link-div a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 14px;
-  font-family: "Poppins";
-}
-
-.link-div a img {
-  transition: transform 0.7s ease-in-out;
-}
-
-.link-div a img:hover {
-  transform: scale(1.1);
-}
+/* Accordion Styles **********************************************************************************************************************************************************************************************************************************/
 
 .accordion_FAQ {
   width: 70%;
@@ -174,12 +131,6 @@
 .is-active .accordion__toggle_FAQ::before {
   display: none;
 }
-@media only screen and (max-width: 768px) {
-  .accordion_FAQ {
-    width: 90%;
-    margin: 0 5%;
-  }
-}
 
 .accordion__body_FAQ {
   display: none;
@@ -197,6 +148,56 @@
 .accordion__body_FAQ.is-active {
   display: block;
 }
+
+/* Product Related Questions ***********************************************************************************************************************************************************************************************************************************/
+
+.product-related-questions {
+  width: 70%;
+  margin: 0 15%;
+  padding-bottom: 40px;
+}
+
+.sections-links-btn-div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 20px 0px;
+  border-radius: 10px;
+  background-color: #f5f2ee;
+}
+
+.sections-links-btn {
+  min-width: 220px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #eee9e3;
+  background-color: #eee9e3;
+  overflow: hidden;
+}
+
+.sections-links-btn img {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+}
+
+.sections-links-btn  {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: black;
+}
+
+.sections-links-btn .external-link-icon{
+  width: 10px;
+  height: 10px;
+}
+
+/* FAQ Form Header ***********************************************************************************************************************************************************************************************************************************/
 
 .faq-form-header-div {
   display: flex;
@@ -315,6 +316,8 @@ form textarea {
   margin-top: 55px;
 }
 
+/* Media Queries ***********************************************************************************************************************************************************************************************************************************/
+
 @media screen and (max-width: 768px) {
   .search-container_FAQ {
     margin-top: 20px;
@@ -324,6 +327,10 @@ form textarea {
     width: 90%;
     font-size: 14px;
   }
+  .accordion_FAQ {
+    width: 90%;
+    margin: 0 5%;
+  }
 
   .accordion__header_FAQ > * {
     font-size: 14px;
@@ -331,6 +338,11 @@ form textarea {
 
   .accordion__body_FAQ p {
     font-size: 12px;
+  }
+
+  .product-related-questions {
+    width: 90%;
+    margin: 0 5%;
   }
 
   .sections-links-btn {
