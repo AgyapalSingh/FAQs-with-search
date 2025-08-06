@@ -112,7 +112,7 @@
 .accordion_FAQ {
   width: 70%;
   margin: 0 15%;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .section-title_FAQ {
@@ -316,9 +316,23 @@ form textarea {
 }
 
 @media screen and (max-width: 768px) {
+  .search-container_FAQ {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   #search-input_FAQ {
     width: 90%;
+    font-size: 14px;
   }
+
+  .accordion__header_FAQ > * {
+    font-size: 14px;
+  }
+
+  .accordion__body_FAQ p {
+    font-size: 12px;
+  }
+
   .sections-links-btn {
     width: 90%;
     margin: 0 5%;
