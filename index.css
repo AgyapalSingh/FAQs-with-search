@@ -350,10 +350,9 @@ form textarea {
     margin: 0 5%;
   }
 
-  .link-div {
-    width: 150px;
-    height: 150px;
-  }
+  .sections-links-btn-div {
+  gap: 5px;
+}
 
   .faq-form-header {
     width: 90%;
