@@ -224,7 +224,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-
 .faq-modal {
   display: none;
   position: fixed;
@@ -412,19 +411,23 @@ form textarea {
 }
 
 @media screen and (min-width: 381px) and (max-width: 768px) {
+  .sections-links-btn-div {
+    justify-content: space-around;
+  }
   .sections-links-btn {
-    width: 150px;
+    width: 160px;
     font-size: 12px;
     gap: 5px;
   }
 }
 
 @media screen and (max-width: 380px) {
+  .sections-links-btn-div {
+    justify-content: space-around;
+  }
   .sections-links-btn {
     width: 150px;
     font-size: 12px;
     gap: 5px;
   }
 }
-
-
