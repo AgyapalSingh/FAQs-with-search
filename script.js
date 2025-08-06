@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const fuse = new Fuse(faqData, {
     keys: ["question", "answer"],
-    threshold: 0.5, 
+    threshold: 0.5,
   });
 
   searchInput.addEventListener("keyup", function () {
@@ -120,4 +120,26 @@ form.addEventListener("submit", function (event) {
       formResponse.textContent =
         "An error occurred while submitting. Please try again.";
     });
+});
+
+
+//  OPEN CONTACT FORM
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("faqModal");
+  const openBtn = document.getElementById("openFAQModal");
+  const closeBtn = document.getElementById("closeFAQModal");
+
+  openBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
 });
