@@ -190,8 +190,9 @@
 }
 
 .sections-links-btn .external-link-icon {
-  width: 10px;
+  width: 15px;
   height: 10px;
+  padding-right: 5px;
   background-color: #00000000;
 }
 
@@ -345,12 +346,12 @@ form textarea {
     margin: 0 5%;
   }
 
-  .sections-links-btn-div  {
+  .sections-links-btn-div {
     gap: 5px;
   }
 
   .sections-links-btn {
-    width: 180px;
+    width: 190px;
     font-size: 12px;
     gap: 5px;
   }
@@ -378,5 +379,15 @@ form textarea {
   }
   .sections-links-btn-div {
     width: 100%;
+  }
+}
+
+/* @media screen and (min-width: 481px) and (max-width: 768px) { */
+
+@media screen and (max-width: 380px) {
+  .sections-links-btn {
+    width: 150px;
+    font-size: 12px;
+    gap: 5px;
   }
 }
