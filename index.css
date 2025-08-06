@@ -169,7 +169,7 @@
 }
 
 .sections-links-btn {
-  min-width: 220px;
+  width: 220px;
   display: flex;
   gap: 10px;
   align-items: center;
@@ -177,19 +177,16 @@
   border: 1px solid #eee9e3;
   background-color: #eee9e3;
   overflow: hidden;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: black;
 }
 
 .sections-links-btn img {
   width: 40px;
   height: 40px;
   background-color: #ffffff;
-}
-
-.sections-links-btn {
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  color: black;
 }
 
 .sections-links-btn .external-link-icon {
@@ -341,17 +338,20 @@ form textarea {
     font-size: 12px;
   }
 
+  /* Product Related Questions ***********************************************************************************************************************************************************************************************************************************/
+
   .product-related-questions {
     width: 90%;
     margin: 0 5%;
   }
 
-  .sections-links-btn {
-    width: 90%;
-    margin: 0 5%;
+  .sections-links-btn-div  {
+    gap: 5px;
   }
 
-  .sections-links-btn-div {
+  .sections-links-btn {
+    width: 180px;
+    font-size: 12px;
     gap: 5px;
   }
 
