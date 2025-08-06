@@ -239,8 +239,6 @@
 }
 
 .faq-modal-content {
-  background-color: #fff;
-  padding: 30px;
   border-radius: 10px;
   width: 100%;
   max-width: 768px;
@@ -254,6 +252,7 @@
   font-size: 25px;
   font-weight: bold;
   cursor: pointer;
+  color: #ffffff;
 }
 
 .FAQ_Form {
