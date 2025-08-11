@@ -122,7 +122,6 @@ form.addEventListener("submit", function (event) {
     });
 });
 
-
 //  OPEN CONTACT FORM
 document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("faqModal");
@@ -141,5 +140,31 @@ document.addEventListener("DOMContentLoaded", function () {
     if (event.target === modal) {
       modal.style.display = "none";
     }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".sections-links-btn");
+  const btn = document.getElementById("show-more-btn");
+  items.forEach((item, index) => {
+    if (index >= 4) {
+      item.classList.add("hidden");
+    }
+  });
+
+  let expanded = false;
+
+  btn.addEventListener("click", function () {
+    expanded = !expanded;
+    items.forEach((item, index) => {
+      if (index >= 4) {
+        if (expanded) {
+          item.classList.remove("hidden");
+        } else {
+          item.classList.add("hidden");
+        }
+      }
+    });
+    btn.textContent = expanded ? "Show Less" : "Show More";
   });
 });

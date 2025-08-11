@@ -153,25 +153,24 @@
 
 .product-related-questions {
   width: 70%;
-  margin: 0 15%;
+  margin: 0 auto;
   padding-bottom: 40px;
 }
 
 .sections-links-btn-div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px 0px;
+  padding: 20px 10px;
   border-radius: 10px;
   background-color: #f5f2ee;
 }
 
 .sections-links-btn {
-  width: 220px;
   display: flex;
   gap: 10px;
   align-items: center;
+  margin-top: 2px;
   border-radius: 5px;
   border: 1px solid #eee9e3;
   background-color: #eee9e3;
@@ -180,6 +179,9 @@
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   color: black;
+  padding: 5px 10px;
+  transition: all 0.3s ease;
+  opacity: 1;
 }
 
 .sections-links-btn img {
@@ -188,11 +190,25 @@
   background-color: #ffffff;
 }
 
-.sections-links-btn .external-link-icon {
-  width: 15px;
-  height: 10px;
-  padding-right: 5px;
-  background-color: #00000000;
+.sections-links-btn.hidden {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+#show-more-btn {
+  display: block;
+  margin: 10px auto;
+  color: #183457;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
 }
 
 /* FAQ Form Header ***********************************************************************************************************************************************************************************************************************************/
@@ -372,16 +388,7 @@ form textarea {
     width: 90%;
     margin: 0 5%;
   }
-
-  .sections-links-btn-div {
-    gap: 5px;
-  }
-
-  .sections-links-btn {
-    width: 190px;
-    font-size: 12px;
-    gap: 5px;
-  }
+  
   .faq-modal-content {
     width: 90%;
   }
@@ -409,24 +416,3 @@ form textarea {
   }
 }
 
-@media screen and (min-width: 381px) and (max-width: 768px) {
-  .sections-links-btn-div {
-    justify-content: space-around;
-  }
-  .sections-links-btn {
-    width: 160px;
-    font-size: 12px;
-    gap: 5px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .sections-links-btn-div {
-    justify-content: space-around;
-  }
-  .sections-links-btn {
-    width: 150px;
-    font-size: 12px;
-    gap: 5px;
-  }
-}
